@@ -6,9 +6,6 @@
 * [Examples](#examples)
 * [Behavior](#behavior)
 * [Primitives](#primitives)
-  * [Date/Time Utilities](#datetime-utilities)
-  * [Time Series Tool](#time-series-tool)
-  * [Discrete Event Scheduler](#discrete-event-scheduler)
 * [Building](#building)
 * [Authors](#authors)
 * [Feedback](#feedback-bugs-feature-requests)
@@ -17,7 +14,7 @@
 
 ## Quickstart
 
-[Install the time extension](#installation)
+[Install the structs extension](#installation)
 
 Include the extension in your NetLogo model (at the top):
 
@@ -71,6 +68,17 @@ This package contains the NetLogo **structs extension**, which provides NetLogo 
 A stack is like a list but the manner in which elements are added and removed from the list is unique.  To add elements, you "push" them onto the stack.  At any time you can then "pop" the elements from the stack which simultaneously returns the last element to be pushed and removes that element from the stack..  Like a stack of dishes, you push new elements onto the top of the stack and you pop elements off the top, so last in is first out.
 
 This extension is powered by the [Joda Time API for Java](http://joda-time.sourceforge.net/), which has very sophisticated and comprehensive date/time facilities.  A subset of these capabilities have been extended to NetLogo.  The **time extension** makes it easy to convert string representations of dates and date/times to a **LogoTime** object which can then be used to do many common time manipulations such as incrementing the time by some amount (e.g. add 3.5 days to 2001-02-22 10:00 to get 2001-02-25 22:00).
+
+[back to top](#netlogo-structs-extension)
+
+## Installation
+
+First, [download the latest version of the extension](https://github.com/colinsheppard/structs/releases). Note that the latest version of this extension was compiled against NetLogo 5.0.4; if you are using a different version of NetLogo you might consider building your own jar file ([see building section below](#building)).
+
+Unzip the archive and move the directory to the "extensions" directory inside your NetLogo application folder (i.e. [NETLOGO]/extensions/).  Or you can place the directory under the same directory holding the NetLogo model in which you want to use this extension.
+
+For more information on NetLogo extensions:
+[http://ccl.northwestern.edu/netlogo/docs/extensions.html](http://ccl.northwestern.edu/netlogo/docs/extensions.html)
 
 [back to top](#netlogo-structs-extension)
 
