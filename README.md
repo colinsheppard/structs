@@ -65,9 +65,7 @@ This package contains the NetLogo **structs extension**, which provides NetLogo 
 
 **Stacks**
 
-A stack is like a list but the manner in which elements are added and removed from the list is unique.  To add elements, you "push" them onto the stack.  At any time you can then "pop" the elements from the stack which simultaneously returns the last element to be pushed and removes that element from the stack..  Like a stack of dishes, you push new elements onto the top of the stack and you pop elements off the top, so last in is first out.
-
-This extension is powered by the [Joda Time API for Java](http://joda-time.sourceforge.net/), which has very sophisticated and comprehensive date/time facilities.  A subset of these capabilities have been extended to NetLogo.  The **time extension** makes it easy to convert string representations of dates and date/times to a **LogoTime** object which can then be used to do many common time manipulations such as incrementing the time by some amount (e.g. add 3.5 days to 2001-02-22 10:00 to get 2001-02-25 22:00).
+A stack is like a list but the manner in which elements are added and removed from the list is unique.  To add elements, you "push" them onto the stack.  At any time you can then "pop" the elements from the stack which simultaneously returns the last element to be pushed and removes that element from the stack.  Like a stack of dishes, you push new elements onto the top of the stack and you pop elements off the top, so last in is first out.
 
 [back to top](#netlogo-structs-extension)
 
@@ -144,7 +142,7 @@ Reports the latest *element* to be pushed onto *logostack* and removes that elem
 
 *structs:stack-peek logostack*
 
-Reports the lates *element* to be pushed onto *logostack* but does **not** remove that element from the stack.
+Reports the latest *element* to be pushed onto *logostack* but does **not** remove that element from the stack.
 
     structs:stack-push stack 99
     structs:stack-push stack 100
